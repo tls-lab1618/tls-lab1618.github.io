@@ -431,8 +431,11 @@ h3 {
 }
 
 .contact-inner h2 {
-  max-width: 12ch;
-  margin-bottom: 1rem;
+  max-width: none;
+  margin-bottom: 0.65rem;
+  font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+  line-height: 1.25;
+  white-space: nowrap;
 }
 
 @media (max-width: 900px) {
