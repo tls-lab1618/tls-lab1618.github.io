@@ -262,7 +262,7 @@ h3 {
 }
 
 .research-card {
-  min-height: 13rem;
+  min-height: 21rem;
   padding: 1.1rem;
   background: #fff;
   border: 1px solid var(--line);
@@ -270,14 +270,31 @@ h3 {
   box-shadow: 0 16px 45px rgba(20, 31, 52, 0.05);
 }
 
+.research-card .card-dot {
+  margin-bottom: 0.65rem;
+}
+
 .research-card p,
 .contact-inner p {
   color: var(--muted);
 }
 
+.attractor-pic {
+  display: block;
+  width: 100%;
+  height: clamp(7.4rem, 11vw, 8.9rem);
+  aspect-ratio: 220 / 130;
+  margin: 0 0 0.9rem;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid rgba(220, 228, 239, 0.86);
+  border-radius: 8px;
+  filter: saturate(1.35) contrast(1.12);
+}
+
 .attractor-label {
   display: inline-block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.65rem;
   padding: 0.22rem 0.48rem;
   color: var(--navy);
   background: rgba(238, 242, 247, 0.78);
@@ -287,6 +304,10 @@ h3 {
   font-weight: 850;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.research-card p:last-child {
+  margin-bottom: 0;
 }
 
 .people-section {
