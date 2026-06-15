@@ -275,12 +275,26 @@ h3 {
   color: var(--muted);
 }
 
+.attractor-label {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.22rem 0.48rem;
+  color: var(--navy);
+  background: rgba(238, 242, 247, 0.78);
+  border: 1px solid rgba(220, 228, 239, 0.9);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .people-section {
   padding: clamp(4rem, 9vw, 8rem) 0;
 }
 
-.people-section h2 {
-  margin-bottom: 2rem;
+.people-section .section-kicker {
+  margin-bottom: 1.45rem;
 }
 
 .people-grid {
