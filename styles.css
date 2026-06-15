@@ -255,6 +255,17 @@ h3 {
   margin-bottom: 2rem;
 }
 
+.research-band h2 {
+  max-width: none;
+  font-size: clamp(1.2rem, 1.7vw, 1.55rem);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.directions-band .section-kicker {
+  margin-bottom: 1.45rem;
+}
+
 .research-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -262,7 +273,7 @@ h3 {
 }
 
 .research-card {
-  min-height: 21rem;
+  min-height: 19rem;
   padding: 1.1rem;
   background: #fff;
   border: 1px solid var(--line);
@@ -290,20 +301,6 @@ h3 {
   border: 1px solid rgba(220, 228, 239, 0.86);
   border-radius: 8px;
   filter: saturate(1.35) contrast(1.12);
-}
-
-.attractor-label {
-  display: inline-block;
-  margin-bottom: 0.65rem;
-  padding: 0.22rem 0.48rem;
-  color: var(--navy);
-  background: rgba(238, 242, 247, 0.78);
-  border: 1px solid rgba(220, 228, 239, 0.9);
-  border-radius: 999px;
-  font-size: 0.72rem;
-  font-weight: 850;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .research-card p:last-child {
@@ -424,6 +421,10 @@ h3 {
   .person-card,
   .direction-list p {
     min-height: auto;
+  }
+
+  .research-band h2 {
+    white-space: normal;
   }
 }
 
