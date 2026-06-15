@@ -132,7 +132,7 @@ nav a:hover {
 }
 
 .hero-copy {
-  max-width: 55rem;
+  max-width: 76rem;
 }
 
 .eyebrow,
@@ -153,11 +153,11 @@ p {
 }
 
 h1 {
-  max-width: 13ch;
+  max-width: 26ch;
   margin-bottom: 0.55rem;
   color: var(--navy);
-  font-size: clamp(3.5rem, 8.8vw, 7.2rem);
-  line-height: 0.94;
+  font-size: clamp(3rem, 6.2vw, 5.3rem);
+  line-height: 1;
   letter-spacing: 0;
 }
 
@@ -384,7 +384,7 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(3.15rem, 16vw, 4.8rem);
+    font-size: clamp(2.25rem, 9.6vw, 2.75rem);
   }
 
   .title-symbol-bg {
