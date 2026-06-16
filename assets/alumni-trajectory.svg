@@ -1,38 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 880" fill="none">
   <defs>
-    <linearGradient id="alumni-flow" x1="74" y1="92" x2="1084" y2="792" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0f45a8" stop-opacity="0.92"/>
-      <stop offset="0.24" stop-color="#b98612" stop-opacity="0.98"/>
-      <stop offset="0.48" stop-color="#ba111e" stop-opacity="0.94"/>
-      <stop offset="0.74" stop-color="#964219" stop-opacity="0.96"/>
-      <stop offset="1" stop-color="#0f45a8" stop-opacity="0.92"/>
+    <linearGradient id="tirupati-ridge" x1="82" y1="610" x2="1105" y2="404" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f45a8" stop-opacity="0.94"/>
+      <stop offset="0.26" stop-color="#b98612" stop-opacity="0.98"/>
+      <stop offset="0.52" stop-color="#ba111e" stop-opacity="0.96"/>
+      <stop offset="0.76" stop-color="#964219" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#0f45a8" stop-opacity="0.94"/>
     </linearGradient>
-    <filter id="depth" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#141f34" flood-opacity="0.28"/>
+    <linearGradient id="tirupati-shadow" x1="120" y1="728" x2="1090" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f45a8" stop-opacity="0.46"/>
+      <stop offset="0.34" stop-color="#b98612" stop-opacity="0.56"/>
+      <stop offset="0.68" stop-color="#ba111e" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#964219" stop-opacity="0.52"/>
+    </linearGradient>
+    <filter id="ridge-depth" x="-10%" y="-18%" width="120%" height="136%">
+      <feDropShadow dx="0" dy="20" stdDeviation="16" flood-color="#141f34" flood-opacity="0.24"/>
     </filter>
   </defs>
-  <path d="M94 88C300 11 510 42 674 160C829 272 1028 279 1086 172C1152 51 980 3 749 80C520 157 331 321 230 468C111 641 199 799 422 819C641 839 955 728 1057 562C1164 387 969 291 728 348C492 404 332 534 301 654C272 768 386 829 571 786C776 738 939 602 908 480C878 361 621 318 411 409C237 485 178 608 267 702"
-        stroke="url(#alumni-flow)" stroke-width="12" stroke-linecap="round" filter="url(#depth)"/>
-  <path d="M117 120C324 82 511 111 665 212C812 309 966 322 1070 241"
-        stroke="#0f45a8" stroke-width="4" stroke-linecap="round" stroke-dasharray="9 14" opacity="0.72"/>
-  <path d="M256 686C369 748 553 750 734 680C925 607 1004 485 908 407"
-        stroke="#ba111e" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 12" opacity="0.68"/>
-  <g opacity="0.98" filter="url(#depth)">
-    <circle cx="92" cy="88" r="7" fill="#1456c6"/>
-    <circle cx="277" cy="35" r="5" fill="#cd9e37"/>
-    <circle cx="512" cy="59" r="8" fill="#b85c30"/>
-    <circle cx="705" cy="177" r="5" fill="#d71c2a"/>
-    <circle cx="977" cy="246" r="9" fill="#1456c6"/>
-    <circle cx="961" cy="45" r="5" fill="#cd9e37"/>
-    <circle cx="592" cy="138" r="6" fill="#1456c6"/>
-    <circle cx="271" cy="415" r="8" fill="#d71c2a"/>
-    <circle cx="180" cy="619" r="5" fill="#b85c30"/>
-    <circle cx="377" cy="802" r="9" fill="#1456c6"/>
-    <circle cx="636" cy="774" r="6" fill="#cd9e37"/>
-    <circle cx="902" cy="663" r="8" fill="#d71c2a"/>
-    <circle cx="1014" cy="522" r="5" fill="#1456c6"/>
-    <circle cx="827" cy="363" r="7" fill="#b85c30"/>
-    <circle cx="542" cy="378" r="6" fill="#cd9e37"/>
-    <circle cx="325" cy="544" r="8" fill="#1456c6"/>
+  <path d="M76 642C147 605 186 528 252 530C312 532 347 444 404 468C466 494 482 314 552 352C621 390 652 202 739 274C814 336 815 448 899 430C979 414 1019 500 1108 468"
+        stroke="url(#tirupati-ridge)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" filter="url(#ridge-depth)"/>
+  <path d="M116 704C222 628 314 668 420 604C530 538 617 526 728 556C838 586 939 553 1068 590"
+        stroke="url(#tirupati-shadow)" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 18" opacity="0.9"/>
+  <path d="M162 596C245 564 302 594 378 548C472 491 552 474 660 496C748 514 819 504 922 470"
+        stroke="#0f45a8" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 16" opacity="0.72"/>
+  <path d="M260 700C344 658 420 666 508 626C602 584 700 614 800 590C895 568 948 610 1028 560"
+        stroke="#ba111e" stroke-width="5" stroke-linecap="round" stroke-dasharray="9 15" opacity="0.68"/>
+  <g opacity="0.98" filter="url(#ridge-depth)">
+    <circle cx="252" cy="530" r="9" fill="#0f45a8"/>
+    <circle cx="404" cy="468" r="8" fill="#b98612"/>
+    <circle cx="552" cy="352" r="10" fill="#ba111e"/>
+    <circle cx="739" cy="274" r="11" fill="#964219"/>
+    <circle cx="899" cy="430" r="8" fill="#0f45a8"/>
+    <circle cx="1018" cy="500" r="7" fill="#b98612"/>
+    <circle cx="1108" cy="468" r="9" fill="#ba111e"/>
   </g>
 </svg>
