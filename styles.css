@@ -344,12 +344,15 @@ h3 {
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.85rem;
+  gap: 0.65rem;
 }
 
 .person-card {
-  min-height: 9rem;
-  padding: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.72rem;
+  min-height: 5.15rem;
+  padding: 0.72rem;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -357,11 +360,17 @@ h3 {
   backdrop-filter: blur(10px);
 }
 
+.person-card h3 {
+  margin-bottom: 0;
+  font-size: 0.96rem;
+}
+
 .person-photo {
   display: block;
-  width: 5.5rem;
-  height: 5.5rem;
-  margin-bottom: 1rem;
+  flex: 0 0 auto;
+  width: 3.9rem;
+  height: 3.9rem;
+  margin-bottom: 0;
   object-fit: cover;
   border: 1px solid rgba(220, 228, 239, 0.9);
   border-radius: 8px;
@@ -385,13 +394,13 @@ h3 {
 
 .alumni-list {
   position: relative;
-  min-height: clamp(42rem, 72vw, 54rem);
+  min-height: clamp(20rem, 34vw, 26rem);
   padding: 0;
   margin: 0;
   overflow: hidden;
   list-style: none;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(248, 250, 252, 0.86)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.48), rgba(248, 250, 252, 0.58)),
     url("assets/alumni-trajectory.svg") center / 100% 100% no-repeat;
   border: 1px solid rgba(220, 228, 239, 0.9);
   border-radius: 8px;
@@ -404,15 +413,15 @@ h3 {
   left: calc(var(--x) * 1%);
   display: flex;
   align-items: center;
-  gap: 0.42rem;
-  min-height: 2.2rem;
-  padding: 0.46rem 0.68rem;
+  gap: 0.28rem;
+  min-height: 1.32rem;
+  padding: 0.22rem 0.34rem;
   color: var(--navy);
-  background: rgba(255, 255, 255, 0.88);
-  border: 1px solid rgba(220, 228, 239, 0.9);
-  border-radius: 8px;
-  box-shadow: 0 10px 28px rgba(20, 31, 52, 0.08);
-  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(220, 228, 239, 0.72);
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(20, 31, 52, 0.055);
+  font-size: 0.62rem;
   font-weight: 750;
   line-height: 1.1;
   white-space: nowrap;
@@ -422,64 +431,64 @@ h3 {
 
 .alumni-list li::before {
   flex: 0 0 auto;
-  width: 0.46rem;
-  height: 0.46rem;
+  width: 0.31rem;
+  height: 0.31rem;
   content: "";
   background: var(--node-color, var(--blue));
   border-radius: 999px;
-  box-shadow: 0 0 0 0.2rem rgba(20, 86, 198, 0.08);
+  box-shadow: 0 0 0 0.13rem rgba(20, 86, 198, 0.07);
 }
 
-.alumni-list li:nth-child(1) { --x: 9; --y: 8; --node-color: var(--blue); }
-.alumni-list li:nth-child(2) { --x: 29; --y: 7; --node-color: var(--gold); }
-.alumni-list li:nth-child(3) { --x: 50; --y: 8; --node-color: var(--red); }
-.alumni-list li:nth-child(4) { --x: 70; --y: 7; --node-color: var(--copper); }
-.alumni-list li:nth-child(5) { --x: 91; --y: 9; --node-color: var(--blue); }
-.alumni-list li:nth-child(6) { --x: 87; --y: 17; --node-color: var(--gold); }
-.alumni-list li:nth-child(7) { --x: 67; --y: 16; --node-color: var(--red); }
-.alumni-list li:nth-child(8) { --x: 48; --y: 17; --node-color: var(--copper); }
-.alumni-list li:nth-child(9) { --x: 28; --y: 16; --node-color: var(--blue); }
-.alumni-list li:nth-child(10) { --x: 10; --y: 18; --node-color: var(--gold); }
-.alumni-list li:nth-child(11) { --x: 12; --y: 27; --node-color: var(--red); }
-.alumni-list li:nth-child(12) { --x: 32; --y: 25; --node-color: var(--copper); }
-.alumni-list li:nth-child(13) { --x: 52; --y: 26; --node-color: var(--blue); }
-.alumni-list li:nth-child(14) { --x: 72; --y: 25; --node-color: var(--gold); }
-.alumni-list li:nth-child(15) { --x: 91; --y: 27; --node-color: var(--red); }
-.alumni-list li:nth-child(16) { --x: 89; --y: 36; --node-color: var(--copper); }
-.alumni-list li:nth-child(17) { --x: 69; --y: 35; --node-color: var(--blue); }
-.alumni-list li:nth-child(18) { --x: 50; --y: 36; --node-color: var(--gold); }
-.alumni-list li:nth-child(19) { --x: 30; --y: 35; --node-color: var(--red); }
-.alumni-list li:nth-child(20) { --x: 11; --y: 37; --node-color: var(--copper); }
-.alumni-list li:nth-child(21) { --x: 12; --y: 47; --node-color: var(--blue); }
-.alumni-list li:nth-child(22) { --x: 31; --y: 45; --node-color: var(--gold); }
-.alumni-list li:nth-child(23) { --x: 50; --y: 46; --node-color: var(--red); }
-.alumni-list li:nth-child(24) { --x: 69; --y: 45; --node-color: var(--copper); }
-.alumni-list li:nth-child(25) { --x: 88; --y: 47; --node-color: var(--blue); }
-.alumni-list li:nth-child(26) { --x: 90; --y: 56; --node-color: var(--gold); }
-.alumni-list li:nth-child(27) { --x: 71; --y: 55; --node-color: var(--red); }
-.alumni-list li:nth-child(28) { --x: 52; --y: 56; --node-color: var(--copper); }
-.alumni-list li:nth-child(29) { --x: 33; --y: 55; --node-color: var(--blue); }
-.alumni-list li:nth-child(30) { --x: 14; --y: 57; --node-color: var(--gold); }
-.alumni-list li:nth-child(31) { --x: 11; --y: 66; --node-color: var(--red); }
-.alumni-list li:nth-child(32) { --x: 31; --y: 65; --node-color: var(--copper); }
-.alumni-list li:nth-child(33) { --x: 51; --y: 66; --node-color: var(--blue); }
-.alumni-list li:nth-child(34) { --x: 71; --y: 65; --node-color: var(--gold); }
-.alumni-list li:nth-child(35) { --x: 91; --y: 67; --node-color: var(--red); }
-.alumni-list li:nth-child(36) { --x: 88; --y: 76; --node-color: var(--copper); }
-.alumni-list li:nth-child(37) { --x: 68; --y: 75; --node-color: var(--blue); }
-.alumni-list li:nth-child(38) { --x: 48; --y: 76; --node-color: var(--gold); }
-.alumni-list li:nth-child(39) { --x: 28; --y: 75; --node-color: var(--red); }
-.alumni-list li:nth-child(40) { --x: 10; --y: 77; --node-color: var(--copper); }
-.alumni-list li:nth-child(41) { --x: 13; --y: 86; --node-color: var(--blue); }
-.alumni-list li:nth-child(42) { --x: 33; --y: 84; --node-color: var(--gold); }
-.alumni-list li:nth-child(43) { --x: 53; --y: 85; --node-color: var(--red); }
-.alumni-list li:nth-child(44) { --x: 73; --y: 84; --node-color: var(--copper); }
-.alumni-list li:nth-child(45) { --x: 92; --y: 86; --node-color: var(--blue); }
-.alumni-list li:nth-child(46) { --x: 88; --y: 93; --node-color: var(--gold); }
-.alumni-list li:nth-child(47) { --x: 68; --y: 92; --node-color: var(--red); }
-.alumni-list li:nth-child(48) { --x: 48; --y: 93; --node-color: var(--copper); }
-.alumni-list li:nth-child(49) { --x: 28; --y: 92; --node-color: var(--blue); }
-.alumni-list li:nth-child(50) { --x: 10; --y: 93; --node-color: var(--gold); }
+.alumni-list li:nth-child(1) { --x: 10; --y: 13; --node-color: var(--blue); }
+.alumni-list li:nth-child(2) { --x: 20; --y: 8; --node-color: var(--gold); }
+.alumni-list li:nth-child(3) { --x: 34; --y: 9; --node-color: var(--red); }
+.alumni-list li:nth-child(4) { --x: 48; --y: 13; --node-color: var(--copper); }
+.alumni-list li:nth-child(5) { --x: 62; --y: 18; --node-color: var(--blue); }
+.alumni-list li:nth-child(6) { --x: 76; --y: 18; --node-color: var(--gold); }
+.alumni-list li:nth-child(7) { --x: 90; --y: 12; --node-color: var(--red); }
+.alumni-list li:nth-child(8) { --x: 83; --y: 27; --node-color: var(--copper); }
+.alumni-list li:nth-child(9) { --x: 68; --y: 31; --node-color: var(--blue); }
+.alumni-list li:nth-child(10) { --x: 54; --y: 29; --node-color: var(--gold); }
+.alumni-list li:nth-child(11) { --x: 40; --y: 28; --node-color: var(--red); }
+.alumni-list li:nth-child(12) { --x: 26; --y: 31; --node-color: var(--copper); }
+.alumni-list li:nth-child(13) { --x: 12; --y: 39; --node-color: var(--blue); }
+.alumni-list li:nth-child(14) { --x: 24; --y: 49; --node-color: var(--gold); }
+.alumni-list li:nth-child(15) { --x: 38; --y: 55; --node-color: var(--red); }
+.alumni-list li:nth-child(16) { --x: 52; --y: 55; --node-color: var(--copper); }
+.alumni-list li:nth-child(17) { --x: 66; --y: 50; --node-color: var(--blue); }
+.alumni-list li:nth-child(18) { --x: 80; --y: 45; --node-color: var(--gold); }
+.alumni-list li:nth-child(19) { --x: 92; --y: 43; --node-color: var(--red); }
+.alumni-list li:nth-child(20) { --x: 86; --y: 60; --node-color: var(--copper); }
+.alumni-list li:nth-child(21) { --x: 72; --y: 67; --node-color: var(--blue); }
+.alumni-list li:nth-child(22) { --x: 58; --y: 69; --node-color: var(--gold); }
+.alumni-list li:nth-child(23) { --x: 44; --y: 68; --node-color: var(--red); }
+.alumni-list li:nth-child(24) { --x: 30; --y: 67; --node-color: var(--copper); }
+.alumni-list li:nth-child(25) { --x: 16; --y: 72; --node-color: var(--blue); }
+.alumni-list li:nth-child(26) { --x: 12; --y: 87; --node-color: var(--gold); }
+.alumni-list li:nth-child(27) { --x: 25; --y: 91; --node-color: var(--red); }
+.alumni-list li:nth-child(28) { --x: 39; --y: 89; --node-color: var(--copper); }
+.alumni-list li:nth-child(29) { --x: 53; --y: 84; --node-color: var(--blue); }
+.alumni-list li:nth-child(30) { --x: 67; --y: 80; --node-color: var(--gold); }
+.alumni-list li:nth-child(31) { --x: 81; --y: 78; --node-color: var(--red); }
+.alumni-list li:nth-child(32) { --x: 92; --y: 72; --node-color: var(--copper); }
+.alumni-list li:nth-child(33) { --x: 94; --y: 86; --node-color: var(--blue); }
+.alumni-list li:nth-child(34) { --x: 84; --y: 92; --node-color: var(--gold); }
+.alumni-list li:nth-child(35) { --x: 74; --y: 88; --node-color: var(--red); }
+.alumni-list li:nth-child(36) { --x: 61; --y: 90; --node-color: var(--copper); }
+.alumni-list li:nth-child(37) { --x: 47; --y: 94; --node-color: var(--blue); }
+.alumni-list li:nth-child(38) { --x: 34; --y: 80; --node-color: var(--gold); }
+.alumni-list li:nth-child(39) { --x: 20; --y: 80; --node-color: var(--red); }
+.alumni-list li:nth-child(40) { --x: 8; --y: 58; --node-color: var(--copper); }
+.alumni-list li:nth-child(41) { --x: 18; --y: 23; --node-color: var(--blue); }
+.alumni-list li:nth-child(42) { --x: 32; --y: 20; --node-color: var(--gold); }
+.alumni-list li:nth-child(43) { --x: 46; --y: 22; --node-color: var(--red); }
+.alumni-list li:nth-child(44) { --x: 60; --y: 35; --node-color: var(--copper); }
+.alumni-list li:nth-child(45) { --x: 74; --y: 35; --node-color: var(--blue); }
+.alumni-list li:nth-child(46) { --x: 88; --y: 33; --node-color: var(--gold); }
+.alumni-list li:nth-child(47) { --x: 76; --y: 58; --node-color: var(--red); }
+.alumni-list li:nth-child(48) { --x: 62; --y: 62; --node-color: var(--copper); }
+.alumni-list li:nth-child(49) { --x: 48; --y: 42; --node-color: var(--blue); }
+.alumni-list li:nth-child(50) { --x: 34; --y: 42; --node-color: var(--gold); }
 }
 
 .card-dot {
@@ -581,10 +590,10 @@ h3 {
 
   .alumni-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8.2rem, 1fr));
-    gap: 0.55rem;
+    grid-template-columns: repeat(auto-fit, minmax(6.4rem, 1fr));
+    gap: 0.42rem;
     min-height: auto;
-    padding: 1rem;
+    padding: 0.75rem;
     background-size: cover;
   }
 
@@ -597,8 +606,11 @@ h3 {
     transform: none;
   }
 
+  .people-grid .person-card {
+    min-height: 5.15rem;
+  }
+
   .research-card,
-  .person-card,
   .direction-list p {
     min-height: auto;
   }
