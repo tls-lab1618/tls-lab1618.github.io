@@ -531,7 +531,20 @@ h3 {
 }
 
 .contact-section {
+  position: relative;
   padding: clamp(4rem, 9vw, 8rem) 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #fff 0%, #f8fafc 100%);
+}
+
+.contact-section::before {
+  position: absolute;
+  inset: -22% -8% -28%;
+  content: "";
+  background: url("assets/alumni-trajectory.svg") center / min(74rem, 116vw) auto no-repeat;
+  mix-blend-mode: multiply;
+  opacity: 0.42;
+  pointer-events: none;
 }
 
 .direction-list {
@@ -555,6 +568,8 @@ h3 {
 }
 
 .contact-inner {
+  position: relative;
+  z-index: 1;
   max-width: 54rem;
 }
 
