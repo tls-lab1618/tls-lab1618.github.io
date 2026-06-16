@@ -394,8 +394,8 @@ h3 {
 
 .alumni-list {
   position: relative;
-  max-width: 64rem;
-  min-height: clamp(20rem, 33vw, 24rem);
+  max-width: 58rem;
+  min-height: clamp(18.5rem, 30vw, 22rem);
   padding: 0;
   margin: 0 auto;
   overflow: hidden;
@@ -424,15 +424,15 @@ h3 {
   left: calc(var(--x) * 1%);
   display: flex;
   align-items: center;
-  gap: 0.16rem;
-  min-height: 1.18rem;
-  padding: 0.14rem 0.25rem;
+  gap: 0.14rem;
+  min-height: 1.2rem;
+  padding: 0.14rem 0.22rem;
   color: var(--navy);
   background: rgba(255, 255, 255, 0.58);
   border: 1px solid rgba(191, 205, 227, 0.42);
   border-radius: 999px;
   box-shadow: 0 8px 20px rgba(20, 31, 52, 0.05);
-  font-size: 0.66rem;
+  font-size: 0.74rem;
   font-weight: 800;
   line-height: 1.1;
   white-space: nowrap;
@@ -494,7 +494,7 @@ h3 {
 .alumni-list li:nth-child(42) { --x: 32; --y: 20; --node-color: var(--gold); }
 .alumni-list li:nth-child(43) { --x: 46; --y: 22; --node-color: var(--red); }
 .alumni-list li:nth-child(44) { --x: 60; --y: 35; --node-color: var(--copper); }
-.alumni-list li:nth-child(45) { --x: 74; --y: 35; --node-color: var(--blue); }
+.alumni-list li:nth-child(45) { --x: 74; --y: 39; --node-color: var(--blue); }
 .alumni-list li:nth-child(46) { --x: 88; --y: 33; --node-color: var(--gold); }
 .alumni-list li:nth-child(47) { --x: 76; --y: 58; --node-color: var(--red); }
 .alumni-list li:nth-child(48) { --x: 62; --y: 62; --node-color: var(--copper); }
@@ -615,14 +615,14 @@ h3 {
   }
 
   .alumni-list {
-    min-height: clamp(19rem, 104vw, 28rem);
+    min-height: clamp(18rem, 102vw, 26rem);
   }
 
   .alumni-list li {
     min-width: 0;
     gap: 0.08rem;
     padding: 0.08rem 0.12rem;
-    font-size: clamp(0.4rem, 1.45vw, 0.54rem);
+    font-size: clamp(0.45rem, 1.7vw, 0.62rem);
     white-space: nowrap;
   }
 
@@ -632,6 +632,9 @@ h3 {
   }
 
   .alumni-list li:nth-child(19) { --x: 82; --y: 40; }
+  .alumni-list li:nth-child(3) { --x: 37; --y: 6; }
+  .alumni-list li:nth-child(6) { --x: 81; --y: 18; }
+  .alumni-list li:nth-child(35) { --x: 70; --y: 85; }
   .alumni-list li:nth-child(42) { --x: 32; --y: 15; }
   .alumni-list li:nth-child(43) { --x: 44; --y: 22; }
   .alumni-list li:nth-child(44) { --x: 62; --y: 24; }
