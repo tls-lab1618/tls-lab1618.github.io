@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 880" fill="none">
   <defs>
     <linearGradient id="alumni-flow" x1="74" y1="92" x2="1084" y2="792" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#1456c6" stop-opacity="0.2"/>
-      <stop offset="0.24" stop-color="#cd9e37" stop-opacity="0.3"/>
-      <stop offset="0.48" stop-color="#d71c2a" stop-opacity="0.24"/>
-      <stop offset="0.74" stop-color="#b85c30" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#1456c6" stop-opacity="0.2"/>
+      <stop offset="0" stop-color="#1456c6" stop-opacity="0.5"/>
+      <stop offset="0.24" stop-color="#cd9e37" stop-opacity="0.62"/>
+      <stop offset="0.48" stop-color="#d71c2a" stop-opacity="0.54"/>
+      <stop offset="0.74" stop-color="#b85c30" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#1456c6" stop-opacity="0.5"/>
     </linearGradient>
     <filter id="depth" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#141f34" flood-opacity="0.12"/>
     </filter>
   </defs>
   <path d="M94 88C300 11 510 42 674 160C829 272 1028 279 1086 172C1152 51 980 3 749 80C520 157 331 321 230 468C111 641 199 799 422 819C641 839 955 728 1057 562C1164 387 969 291 728 348C492 404 332 534 301 654C272 768 386 829 571 786C776 738 939 602 908 480C878 361 621 318 411 409C237 485 178 608 267 702"
-        stroke="url(#alumni-flow)" stroke-width="5" stroke-linecap="round" filter="url(#depth)"/>
+        stroke="url(#alumni-flow)" stroke-width="8" stroke-linecap="round" filter="url(#depth)"/>
   <path d="M117 120C324 82 511 111 665 212C812 309 966 322 1070 241"
-        stroke="#1456c6" stroke-width="2" stroke-linecap="round" stroke-dasharray="9 14" opacity="0.2"/>
+        stroke="#1456c6" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 14" opacity="0.36"/>
   <path d="M256 686C369 748 553 750 734 680C925 607 1004 485 908 407"
-        stroke="#d71c2a" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 12" opacity="0.18"/>
-  <g opacity="0.38" filter="url(#depth)">
+        stroke="#d71c2a" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 12" opacity="0.34"/>
+  <g opacity="0.74" filter="url(#depth)">
     <circle cx="92" cy="88" r="7" fill="#1456c6"/>
     <circle cx="277" cy="35" r="5" fill="#cd9e37"/>
     <circle cx="512" cy="59" r="8" fill="#b85c30"/>
