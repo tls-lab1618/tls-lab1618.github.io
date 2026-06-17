@@ -432,7 +432,7 @@ h3 {
   border: 1px solid rgba(191, 205, 227, 0.42);
   border-radius: 999px;
   box-shadow: 0 8px 20px rgba(20, 31, 52, 0.05);
-  font-size: 0.74rem;
+  font-size: 0.84rem;
   font-weight: 800;
   line-height: 1.1;
   white-space: nowrap;
@@ -458,7 +458,7 @@ h3 {
 .alumni-list li:nth-child(6) { --x: 76; --y: 18; --node-color: var(--gold); }
 .alumni-list li:nth-child(7) { --x: 90; --y: 12; --node-color: var(--red); }
 .alumni-list li:nth-child(8) { --x: 83; --y: 27; --node-color: var(--copper); }
-.alumni-list li:nth-child(9) { --x: 68; --y: 31; --node-color: var(--blue); }
+.alumni-list li:nth-child(9) { --x: 68; --y: 28; --node-color: var(--blue); }
 .alumni-list li:nth-child(10) { --x: 54; --y: 29; --node-color: var(--gold); }
 .alumni-list li:nth-child(11) { --x: 40; --y: 28; --node-color: var(--red); }
 .alumni-list li:nth-child(12) { --x: 26; --y: 31; --node-color: var(--copper); }
@@ -492,10 +492,10 @@ h3 {
 .alumni-list li:nth-child(40) { --x: 8; --y: 58; --node-color: var(--copper); }
 .alumni-list li:nth-child(41) { --x: 18; --y: 23; --node-color: var(--blue); }
 .alumni-list li:nth-child(42) { --x: 32; --y: 20; --node-color: var(--gold); }
-.alumni-list li:nth-child(43) { --x: 46; --y: 22; --node-color: var(--red); }
-.alumni-list li:nth-child(44) { --x: 60; --y: 35; --node-color: var(--copper); }
-.alumni-list li:nth-child(45) { --x: 74; --y: 39; --node-color: var(--blue); }
-.alumni-list li:nth-child(46) { --x: 88; --y: 33; --node-color: var(--gold); }
+.alumni-list li:nth-child(43) { --x: 46; --y: 20; --node-color: var(--red); }
+.alumni-list li:nth-child(44) { --x: 60; --y: 38; --node-color: var(--copper); }
+.alumni-list li:nth-child(45) { --x: 74; --y: 36; --node-color: var(--blue); }
+.alumni-list li:nth-child(46) { --x: 88; --y: 36; --node-color: var(--gold); }
 .alumni-list li:nth-child(47) { --x: 76; --y: 58; --node-color: var(--red); }
 .alumni-list li:nth-child(48) { --x: 62; --y: 62; --node-color: var(--copper); }
 .alumni-list li:nth-child(49) { --x: 48; --y: 42; --node-color: var(--blue); }
@@ -622,7 +622,7 @@ h3 {
     min-width: 0;
     gap: 0.08rem;
     padding: 0.08rem 0.12rem;
-    font-size: clamp(0.45rem, 1.7vw, 0.62rem);
+    font-size: clamp(0.5rem, 1.9vw, 0.7rem);
     white-space: nowrap;
   }
 
@@ -632,13 +632,16 @@ h3 {
   }
 
   .alumni-list li:nth-child(19) { --x: 82; --y: 40; }
+  .alumni-list li:nth-child(20) { --x: 91; --y: 61; }
+  .alumni-list li:nth-child(27) { --x: 30; --y: 95; }
   .alumni-list li:nth-child(3) { --x: 37; --y: 6; }
   .alumni-list li:nth-child(6) { --x: 81; --y: 18; }
   .alumni-list li:nth-child(35) { --x: 70; --y: 85; }
   .alumni-list li:nth-child(42) { --x: 32; --y: 15; }
   .alumni-list li:nth-child(43) { --x: 44; --y: 22; }
-  .alumni-list li:nth-child(44) { --x: 62; --y: 24; }
-  .alumni-list li:nth-child(45) { --x: 65; --y: 44; }
+  .alumni-list li:nth-child(44) { --x: 62; --y: 7; }
+  .alumni-list li:nth-child(45) { --x: 62; --y: 44; }
+  .alumni-list li:nth-child(46) { --x: 88; --y: 33; }
 
   .people-grid .person-card {
     min-height: 5.15rem;
