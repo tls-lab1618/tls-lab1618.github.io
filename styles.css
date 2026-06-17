@@ -530,7 +530,7 @@ h3 {
 
 .contact-section {
   position: relative;
-  padding: clamp(4rem, 9vw, 8rem) 0;
+  padding: clamp(1rem, 2.25vw, 2rem) 0;
   overflow: hidden;
   background: linear-gradient(180deg, #fff 0%, #f8fafc 100%);
 }
