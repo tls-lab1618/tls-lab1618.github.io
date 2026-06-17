@@ -537,9 +537,9 @@ h3 {
 
 .contact-section::before {
   position: absolute;
-  inset: -22% -8% -28%;
+  inset: -18% 0 -24%;
   content: "";
-  background: url("assets/alumni-trajectory.svg") center / min(74rem, 116vw) auto no-repeat;
+  background: url("assets/alumni-trajectory.svg") center / min(46rem, 96vw) auto no-repeat;
   mix-blend-mode: multiply;
   opacity: 0.42;
   pointer-events: none;
@@ -568,7 +568,7 @@ h3 {
 .contact-inner {
   position: relative;
   z-index: 1;
-  max-width: 54rem;
+  max-width: 32rem;
 }
 
 .contact-inner h2 {
